@@ -1,0 +1,23 @@
+{
+  // Configuration file for 'Open Folder' in Visual Studio 2018.
+  // The environment variable 'GNU_TOOLCHAIN_AVR8' must point to the AVR8 toolchain.
+  "configurations": [
+    {
+      "name": "Arduino Uno",
+      "includePath": [
+        "${env.GNU_TOOLCHAIN_AVR8}\\avr\\include\\**",
+        "${env.GNU_TOOLCHAIN_AVR8}\\lib\\gcc\\avr\\5.4.0\\include",
+        "${env.GNU_TOOLCHAIN_AVR8}\\lib\\gcc\\avr\\5.4.0\\include-fixed",
+        "${workspaceRoot}\\**"
+      ],
+      "defines": [
+        "__GNUC__=5",
+        "__STDC_LIMIT_MACROS",
+        "__AVR_ATmega328P__",
+        "F_CPU=16000000",
+        "BOARD_ArduinoUno=1"
+      ],
+      "intelliSenseMode": "linux-gcc-arm"
+    }
+  ]
+}
